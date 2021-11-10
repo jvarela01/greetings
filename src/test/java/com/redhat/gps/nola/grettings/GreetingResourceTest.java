@@ -12,7 +12,7 @@ import java.util.Random;
 @QuarkusTest
 public class GreetingResourceTest {
     protected final String[] langs=new String[]{"en","es","it","fr","po","ru"};
-    protected final String[] greetings=new String[]{"Hello","Hala","Ciao","Salut","Ola","Privet"};
+    protected final String[] greetings=new String[]{"Hello","Hola","Ciao","Salut","Ola","Privet"};
 
     @Test
     public void testHelloEndpoint() {
