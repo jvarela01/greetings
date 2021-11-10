@@ -25,7 +25,6 @@ public class GreetingResource {
         return service.greeting(name);
     }
 
-    /*
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     @Path("/int")
@@ -46,5 +45,4 @@ public class GreetingResource {
     public String greetingLang(@PathParam String lang, @PathParam String name) {
         return service.greetingLang(lang,name);
     }
-    */
 }

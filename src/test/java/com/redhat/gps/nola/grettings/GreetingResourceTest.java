@@ -7,12 +7,12 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
 
 import java.util.UUID;
-//import java.util.Random;
+import java.util.Random;
 
 @QuarkusTest
 public class GreetingResourceTest {
-    //protected final String[] langs=new String[]{"en","es","it","fr","po","ru"};
-    //protected final String[] greetings=new String[]{"Hello","Hala","Ciao","Salut","Ola","Privet"};
+    protected final String[] langs=new String[]{"en","es","it","fr","po","ru"};
+    protected final String[] greetings=new String[]{"Hello","Hala","Ciao","Salut","Ola","Privet"};
 
     @Test
     public void testHelloEndpoint() {
@@ -34,7 +34,7 @@ public class GreetingResourceTest {
             .body(is("Hello "+uuid+"!"));
     }
 
-    /*
+    
     @Test
     public void testGreetingDefaultInt(){
         given()
@@ -69,5 +69,4 @@ public class GreetingResourceTest {
             .statusCode(200)
             .body(is(greetings[randomLang]+" "+uuid+"!"));
     }
-    */
 }
